@@ -1,0 +1,75 @@
+<div class="ui five column cards">
+    <div class="ui inverted cards">
+        <div class="card">
+            <div class="ui inverted segment">
+                <div class="container">
+                    <div id="leftTop aligned header">
+                        <h3>${_stationlist.title}</h3>
+                            <p>${_stationlist.longitude} </p>
+                            <p>${_stationlist.latitude} </p>
+                            <div class="right floated ui icon">
+                                <i class="big circular inverted marker icon"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="ui inverted segment">
+                <div class="container">
+                    <div class="leftTop aligned header">
+                        <h4>Current Conditions
+                            <div class="ui-corner-right floated icon">
+                                <i class="big circular inverted cloud sun icon"></i></div>
+                        </h4>
+                        <p>${_stationlist.latestConditions}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="ui inverted segment">
+                <div class="container">
+                    <div class="leftTop aligned header">
+                        <h4>Temperature
+                            <div class="ui-corner-right floated icon">
+                                <i class="big circular inverted temperature high icon"></i></div>
+                        </h4>
+                        <p>${_latestReading.temp} C </p>
+                        <p>${_latestReading.celsiusToFahrenheit} F </p>
+                        <h5>Feels like:</h5>
+                        <p>${_latestReading.windChill} C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="ui inverted segment">
+                <div class="container">
+                    <div class="leftTop aligned header">
+                        <h4>Wind
+                            <div class="ui-corner-right floated icon">
+                                <i class="big circular inverted wind icon"></i></div>
+                        </h4>
+                        <p>${_latestReading.kmhToBeaufort} bft</p>
+                        <h5>Wind Direction</h5>
+                        <p>${_latestReading.compassToDegree}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="ui inverted segment">
+                <div class="container">
+                    <div class="leftTop aligned header">
+                        <h4>Pressure
+                            <div class="ui-corner-right floated icon">
+                                <i class="big circular inverted tachometer alternate icon"></i></div>
+                        </h4>
+                        <p>${_latestReading.pressure} hPa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,22 @@
+
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"dashboard"/}
+
+#{list items:stationlists, as:'stationlist'}
+
+
+<section class="ui segment">
+  <h2 class="ui header">
+    ${member.firstname} ${member.lastname}'s ${stationlist.title}
+  </h2>
+  <td><a href="/stationlists/${stationlist.id}" class="ui icon button">
+    <i class="icon folder open"></i>
+  </a>
+  <a href="/dashboard/${member.id}/deletestationlist/${stationlist.id}" class="ui icon button">
+    <i class="icon trash"></i>
+  </a>
+</section>
+#{/list}
+#{addstationlist /}
