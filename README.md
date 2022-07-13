@@ -1,4 +1,4 @@
-# play-template-1
+# weatherTop
 
 This is a sample starter project for this course:
 
